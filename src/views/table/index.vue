@@ -7,12 +7,14 @@
       stateLabel="工单状态"
       :dropDownList="dropDownList"
     ></headSearch>
-    123
+    <bodyFrom></bodyFrom>
   </div>
 </template>
 
 <script>
-import headSearch from '@/components/headSearch/index.vue'
+import headSearch from '@/components/headSearch'
+import bodyFrom from './bodyFrom'
+
 export default {
   data() {
     return {
@@ -30,6 +32,7 @@ export default {
   methods: {},
   components: {
     headSearch,
+    bodyFrom
   },
 }
 </script>
